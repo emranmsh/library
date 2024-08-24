@@ -1,0 +1,11 @@
+ 
+ fieldset{
+    display: flex;
+    justify-content: space-around;
+ }
+
+ button[type="submit"]{
+    position: relative;
+    margin-top: 1%;
+    left: 85%;
+ }
