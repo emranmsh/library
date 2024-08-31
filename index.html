@@ -8,22 +8,27 @@
 </head>
 <body>
     <div class="top">
-    <button>NEW BOOK</button>
+        
+
+    <button class="add">New Book</button> 
     <dialog>
         <form>
             <legend class="close"><button>X</button></legend>
             <legend>Enter book details</legend>
             <fieldset>
                 <label for="name">Name</label>
-                <input id = "name" type="text">
+                <input id = "name" type="text" required>
                 <label for="author">Author</label>
-                <input id="author" type="text">
+                <input id="author" type="text" required> 
             </fieldset>
             <fieldset>
                 <label for="page">Pages</label>
-                <input id="page" type="text">
+                <input id="page" type="number" required>
                 <label for="read">Read</label>
-                <input id="read" type="text">
+                <select id="read" type="text"   required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
             </fieldset>
             <button class="submit" type="submit">Submit</button>
         </form>

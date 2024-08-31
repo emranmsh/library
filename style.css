@@ -1,11 +1,91 @@
+ *{
+   background-color: rgb(255, 239, 197);
+   border-radius: 20px 0px 20px 0px;
+ }
  
  fieldset{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 1%;
  }
-
+.close{ 
+   padding-left: 90%;
+}
  button[type="submit"]{
     position: relative;
     margin-top: 1%;
     left: 85%;
  }
+.top{
+   background-color: rgb(255, 235, 208);
+   height: 20vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.top > button{
+   width: 20%;
+   height: 20%
+}
+ .bottom{
+   background-color: rgb(255, 230, 197);
+   margin: 5% 5% 5% 5%;
+   overflow-y: auto;
+   padding: 5% 5% 5% 5%;
+   height: 70vh; 
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: minmax(40%,50%);
+   
+ }
+
+ .bottom>div{
+   display: grid;
+   min-width: 80%;
+   max-width: 90%;
+   min-height: 40%;
+   max-height: 50%;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   background-color: rgb(253, 253, 244);
+ }
+
+ .bottom>div>div{ 
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ .bottom>div>div>button{
+   overflow: hidden;
+   min-width: 70%;
+   max-width: 80%;
+   min-height: 50%;
+   max-height: 70%;
+   font-size: 10px; 
+}
+
+.bottom>div>div>div{
+   background-color: rgb(238, 62, 62);
+   border-radius: 10px;
+   height: 40%;
+   width: 40%;
+   
+}
+
+.bottom>div>div .selected{
+   background-color: rgb(72, 228, 72);
+}
+
+.delete{
+   grid-column-start: 2;
+   border-radius: 20px 0px 20px 0px;
+}
+input:invalid{
+   border-color: rgba(255, 0, 0, 0.295);
+   
+}
+
+input{
+   padding-left: 15px;
+}
